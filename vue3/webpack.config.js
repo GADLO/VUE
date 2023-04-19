@@ -5,7 +5,7 @@ const { VueLoaderPlugin } = require('vue-loader')
 /**
   * 2.6 --> vue-loader  npm i vue-loader -D
   * 3   --> vue-loader@next npm i vue-loader@next -D
-  * 
+  * 3   --> @vue/compiler-sfc  npm i @vue/compiler-sfc
 */
 module.exports = {
     mode: 'development',
