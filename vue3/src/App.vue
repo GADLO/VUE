@@ -1,7 +1,17 @@
-<template></template>
+<template>
+    <div>
+        {{ message }}
+    </div>
+</template>
 
-<script setup lang='ts'>
-
+<script >
+export default {
+    data() {
+        return {
+            message: 'Hello Vue3'
+        }
+    }
+}
 </script>
 
 <style lang='scss'></style>
