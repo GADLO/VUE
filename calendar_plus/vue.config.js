@@ -2,10 +2,11 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
-    overlay: {
-      wanrnings: false,
-      errors: false
-    },
+    // overlay: {
+
+    //   warnings: false,
+    //   errors: false
+    // },
     proxy: {
       "/api": {
         target: "http://v.juhe.cn/",  //目标地址
@@ -17,6 +18,7 @@ module.exports = defineConfig({
         }
       }
     },
-    lintOnSave: false
+
   },
+  lintOnSave: false
 })

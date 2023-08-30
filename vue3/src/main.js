@@ -122,7 +122,7 @@ const ToDoList = {
         },
 
         addTodo(value) {
-            console.log(this.todolist);
+            (this.todolist);
             this.todolist.push(
                 {
                     id: new Date().getTime(),
