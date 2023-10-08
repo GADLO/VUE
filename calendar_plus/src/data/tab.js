@@ -19,6 +19,7 @@ export default [
     {
         iconText: getIconDate('year'),
         tabText: 'router',
-        path: '/router'
+        path: '/router/123'
     },
+
 ] 

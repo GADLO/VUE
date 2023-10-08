@@ -12,6 +12,7 @@ import getdata from '@/services'
 import { computed, onMounted } from 'vue';
 import { useStore } from 'vuex';
 import { getNowDate } from '@/libs/utils'
+import { useRoute } from 'vue-router';
 
 export default {
     name: 'DayPage',
@@ -22,12 +23,15 @@ export default {
     setup() {
 
         const store = useStore(),
+            route = useRoute(),
             state = store.state;
 
-        onMounted(() => {
-            getdata(store, 'day', getNowDate('day'));
-            console.log(state.dayData);
-        })
+
+
+
+        getdata(store, 'day', getNowDate('day'));
+        // console.log(state.dayData);
+
 
 
         return computed(() => state).value;

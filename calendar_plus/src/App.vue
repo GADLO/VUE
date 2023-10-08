@@ -28,7 +28,7 @@ export default {
       state = store.state,
       router = useRouter();
 
-    router.push('/day');
+    // router.push('/day');
 
 
     watch(() => {
